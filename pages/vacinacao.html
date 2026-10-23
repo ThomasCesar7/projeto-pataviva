@@ -12,7 +12,7 @@
         <nav class="navegacao" aria-label="Navegação principal">
             <ul class="navegacao__lista">
                 <li class="navegacao__item">
-                    <a href="/index.html" class="navegacao__link">Início</a>
+                    <a href="../index.html" class="navegacao__link">Início</a>
                 </li>
 
                 <li class="navegacao__item">
@@ -62,8 +62,7 @@
                 >
             </div>
         </section>
-    </main>
-
+    
     <section id="por-que-vacinar" class="beneficios">
         <div class="beneficios__container">
             <h2 class="beneficios__titulo">
@@ -107,7 +106,7 @@
     <section id="vacinacao-pets" class="vacinacao-pets">
         <div class="vacinacao-pets__conteudo">
             <h2 class="vacinacao-pets__titulo">
-                Vacinação
+                Vacinação de cães e gatos
             </h2>
 
             <p class="vacinacao-pets__descricao">
@@ -130,35 +129,88 @@
         </div>
     </section>
 
-    <h1>calendário de vacinação</h1>
-    <h2>Vacinação de cães</h2>
-    <p>As vacinas ajudam a proteger os cães contra doenças como cinomose, parvovirose e raiva.
-    O protocolo deve ser definido pelo médico-veterinário, considerando a idade e o histórico de vacinação.</p>
+    <section id="calendario-vacinacao" class="calendario">
+        <div class="calendario__container">
+            <h2 class="calendario__titulo">
+                Calendário de vacinação
+            </h2>
 
-    <h2>Vacinação de gatos</h2>
-    <p>A vacinação pode proteger os gatos contra doenças como panleucopenia, calicivirose e rinotraqueíte.
-    O veterinário indicará as vacinas adequadas conforme os riscos e as necessidades de cada animal.</p>
+            <div class="calendario__lista">
+                <article class="calendario-card">
+                    <h3 class="calendario-card__titulo">
+                        Vacinação de cães
+                    </h3>
 
-    <h2>Vacinação antirrábica</h2>
-    <p>A raiva é uma doença grave que pode afetar animais e seres humanos.
-    Mantenha a vacinação antirrábica em dia, seguindo as orientações veterinárias e as campanhas locais.</p>
+                    <p class="calendario-card__descricao">
+                        As vacinas ajudam a proteger os cães contra doenças
+                        como cinomose, parvovirose e raiva. O protocolo deve
+                        ser definido pelo médico-veterinário, considerando
+                        a idade e o histórico de vacinação.
+                    </p>
+                </article>
 
-    <h1>Antes de vacinar, lembre-se</h1>
-    <ul>
-        <li>Procure um médico-veterinário para avaliar o animal.</li>
-        <li>Informe o histórico de vacinação e possíveis problemas de saúde.</li>
-        <li>Guarde a carteira de vacinação e respeite as datas de reforço indicadas.</li>
-    </ul>
-    <p>A vacinação deve seguir a orientação profissional e as recomendações sanitárias locais.</p>
+                <article class="calendario-card">
+                    <h3 class="calendario-card__titulo">
+                        Vacinação de gatos
+                    </h3>
 
-    <footer>
-        <h1>PATAVIVA</h1>
-        <ul>
-            <li>Início</li>
-            <li>Vacinação</li>
-            <li>Castração</li>
-            <li>Doação de sangue</li>
-        </ul>
+                    <p class="calendario-card__descricao">
+                        A vacinação pode proteger os gatos contra doenças
+                        como panleucopenia, calicivirose e rinotraqueíte.
+                        O veterinário indicará as vacinas adequadas conforme
+                        os riscos e as necessidades de cada animal.
+                    </p>
+                </article>
+
+                <article class="calendario-card">
+                    <h3 class="calendario-card__titulo">
+                        Vacinação antirrábica
+                    </h3>
+
+                    <p class="calendario-card__descricao">
+                        A raiva é uma doença grave que pode afetar animais
+                        e seres humanos. Mantenha a vacinação antirrábica
+                        em dia, seguindo as orientações veterinárias e as
+                        campanhas locais.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="rodape" class="rodape">
+        <div class="rodape__container">
+            <a href="../index.html" class="rodape__logo">
+                PATAVIVA
+            </a>
+            
+            <nav class="rodape__navegacao" aria-label="Navegação do rodapé">
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <a href="../index.html" class="rodape__link">Início</a>
+                    </li>
+                    
+                    <li class="rodape__item">
+                        <a href="./vacinacao.html" class="rodape__link" aria-current="page">Vacinação</a>
+                    </li>
+
+                    <li class="rodape__item">
+                        <a href="./castracao.html" class="rodape__link">Castração</a>
+                    </li>
+
+                    <li class="rodape__item">
+                        <a href="./doacao.html" class="rodape__link">Doação de sangue</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="rodape__base">
+            <p class="rodape__descricao">
+                Informação e cuidado para uma vida mais saudável dos animais.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
