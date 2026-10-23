@@ -6,24 +6,65 @@
     <title>Pataviva - Vacinação</title>
 </head>
 <body>
-    <header>
-        <h2>PATAVIVA</h2>
-        <nav>
-            <ul>
-                <li><a href="/index.html">Início</a></li>
-                <li><a href="./vacinacao.html">Vacinação</a></li>
-                <li><a href="./castracao.html">Castração</a></li>
-                <li><a href="./doacao.html">Doação de sangue</a></li>
+    <header id="cabecalho" class="cabecalho">
+        <a href="../index.html" class="cabecalho__logo">PATAVIVA</a>
+        
+        <nav class="navegacao" aria-label="Navegação principal">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item">
+                    <a href="/index.html" class="navegacao__link">Início</a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./vacinacao.html"
+                       class="navegacao__link navegacao__link--ativo"
+                       aria-current="page">
+                        Vacinação
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./castracao.html" class="navegacao__link">
+                        Castração
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./doacao.html" class="navegacao__link">
+                        Doação de sangue
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
+    
+    <main>
+        <section id="banner-principal" class="banner">
+            <div class="banner__conteudo">
+                <h1 class="banner__titulo">
+                    Vacinar é um ato de amor!
+                </h1>
 
-    <h1>Vacinar é um ato de amor!</h1>
-    <p>Proteger seu pet começa com prevenção. Manter a vacinação em dia ajuda a reduzir o risco de doenças e faz parte de uma rotina de cuidados responsáveis.</p>
-    <img src="/img/pets-hero.jpg" alt="Cão e gato" width="580" height="387">
+                <p class="banner__descricao">
+                    Proteger seu pet começa com prevenção. Manter a vacinação
+                    em dia ajuda a reduzir o risco de doenças e faz parte de
+                    uma rotina de cuidados responsáveis.
+                </p>
+            </div>
+
+            <div class="banner__imagem-container">
+                <img
+                src="../img/pets-hero.jpg" 
+                alt="Cão e gato juntos na grama"
+                class="banner__imagem"
+                width="580"
+                height="387"
+                >
+            </div>
+        </section>
+    </main>
 
     <h1>Por que vacinar?</h1>
-
     <h2>prevenção</h2>
     <p>Ajuda a proteger seu pet contra doenças infecciosas e faz parte dos cuidados preventivos.</p>
 
@@ -40,7 +81,7 @@
     <img src="/img/vacinacao-cao.jpg" alt="Cachoro sendo vacinado" width="431" height="287">
 
     <h1>calendário de vacinação</h1>
-
+    
     <h2>Vacinação de cães</h2>
     <p>As vacinas ajudam a proteger os cães contra doenças como cinomose, parvovirose e raiva.
     O protocolo deve ser definido pelo médico-veterinário, considerando a idade e o histórico de vacinação.</p>
