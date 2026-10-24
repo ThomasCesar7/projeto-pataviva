@@ -1,15 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pataviva | Doe Sangue</title>
 </head>
 <body>
-    <main>
+    <header>
+        <div id="atalho-outras-paginas">
+            <a href="../index.html" class="cabecalho__logo">PATAVIVA</a>
+        
+            <nav class="navegacao" aria-label="Navegação principal">
+                <ul class="navegacao__lista">
+                    <li class="navegacao__item">
+                        <a href="../index.html" class="navegacao__link">Início</a>
+                    </li>
+
+                    <li class="navegacao__item">
+                        <a href="./vacinacao.html"
+                            class="navegacao__link">
+                            Vacinação
+                        </a>
+                    </li>
+
+                    <li class="navegacao__item">
+                        <a href="./castracao.html" class="navegacao__link">
+                            Castração
+                        </a>
+                    </li>
+
+                    <li class="navegacao__item">
+                        <a href="./doacao.html" class="navegacao__link navegacao__link--ativo"
+                            aria-current="page">
+                            Doação de sangue
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <h1>
             Doação de Sangue
         </h1>
+        <p>
+            Uma doação pode salvar vidas!
+        </p>
+        <hr>
+        <nav id="navegacao_pagina">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+
+                <li>
+                    <a href="#por-que-doar">Por que doar?</a>
+                </li>
+
+                <li>
+                    <a href="#quem-pode-doar">Quem pode doar?</a>
+                </li>
+
+                <li>
+                    <a href="#doacao">Como funciona?</a>
+                </li>
+
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>
+                Seja um herói de quatro patas!
+            </h2>
+            <p>
+                A doação de sangue de cães e gatos pode ajudar a salvar a vida de outros animais que precisam de transfusões. Com a avaliação veterinária adequada, seu pet pode se tornar um doador e contribuir para o tratamento de animais em situações críticas.
+            </p>
+            <img src="https://imgs.search.brave.com/nprf6Nw65UTSsMPn1zywVmGJTUZ0NhYcMb28Viw4xFk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAyNC8w/NC8wNS8yMC8xNy9h/aS1nZW5lcmF0ZWQt/ODY3ODE4MV82NDAu/anBn" alt="Um cachorro e um gato observando algo">
+        </section>
+
+        <section id="por-que-doar">
+            <h2>
+                Por que doar?
+            </h2>
+            <p>
+                Transfusões sanguíneas podem ser necessárias em casos de anemia grave, hemorragias, acidentes, distúrbios da coagulação e durante algumas cirurgias complexas. A doação contribui para manter os estoques dos bancos de sangue veterinários e ajudar pacientes que precisam desse tratamento.
+            </p>
+            <img src="https://imgs.search.brave.com/a4TFd2Q44e_TAiHsGJgwHFAArCfK6L0iwQ3DfWitC_Y/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/em9vcGx1cy5wdC9t/YWdhemluZS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMi8xMC9n/YXRvc19zYW5ndWVf/MS53ZWJw" alt="Gato recebendo uma transfusão de sangue">
+        </section>
+
+        <div id="requisitos-doar">
+            <section id="quem-pode-doar">
+                <h2>
+                    Quem pode doar?
+                </h2>
+                <div id="bloco-caes">
+                    <h3>
+                        Cães
+                    </h3>
+                    <img src="https://imgs.search.brave.com/X_A6v3dpvOVhi775wOpLSxgMuOQj7EXEtOcNCJqZ6Hc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLm1h/Z25pZmljLmNvbS8y/NTYvMTY1MC8xNjUw/NjA5LnBuZz9zZW10/PWFpc193aGl0ZV9s/YWJlbA" alt="Desenho de um cachorro sentado">
+                    <ul>
+                        <li>
+                            Ter entre 1 e 8 anos.
+                        </li>
+
+                        <li>
+                            Pesar mais de 25 kg.
+                        </li>
+
+                        <li>
+                            Estar saudável, após avaliação veterinária.
+                        </li>
+
+                        <li>
+                            Estar com vacinação, vermifugação e controle de parasitas em dia.
+                        </li>
+
+                        <li>
+                            Ser dócil e não estar gestante ou amamentando, quando fêmea.
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="bloco-gatos">
+                    <h3>
+                        Gatos
+                    </h3>
+                    <img src="https://imgs.search.brave.com/em9F0e29eR8ctVzHfvrLqN2GzOO14wEqw8t6RuMRm1U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLm1h/Z25pZmljLmNvbS8y/NTYvMTk1OS8xOTU5/OTY4LnBuZz9nYT1H/QTEuMS4zNTI1OTIw/NC4xNzkwMTQ3MzA3/JnNlbXQ9YWlzX3do/aXRlX2xhYmVs" alt="Desenho de um gato sentado.">
+                    <ul>
+                        <li>
+                            Ter entre 1 e 7 anos.
+                        </li>
+
+                        <li>
+                            Pesar pelo menos 4,5 kg.
+                        </li>
+
+                        <li>
+                            Estar saudável, após avaliação veterinária.
+                        </li>
+
+                        <li>
+                            Estar com vacinação, vermifugação e controle de parasitas em dia.
+                        </li>
+
+                        <li>
+                            Ser dócil e, preferencialmente, não ter acesso livre à rua.
+                        </li>
+                    </ul>
+                </div>
+                <p>
+                    Os critérios de idade e peso podem variar conforme o banco de sangue veterinário. A avaliação profissional é indispensável. O histórico de transfusões anteriores e exames para doenças infecciosas também são avaliados pelo banco de sangue.
+                </p>
+            </section>
+        </div>
+
+        <section id="doacao">
+            <h2>
+                Como funciona a doação?
+            </h2>
+            <p>
+                O processo começa com uma avaliação veterinária para verificar se o animal está apto a doar. Em seguida, são realizados exames para avaliar sua saúde e investigar possíveis doenças transmissíveis. Se aprovado, o sangue é coletado por uma equipe veterinária capacitada, seguindo os procedimentos de segurança adequados à espécie.
+            </p>
+        </section>
+
+        <section id="contato">
+            <h2>
+                Contato
+            </h2>
+            <p>
+                Quer ajudar a salvar vidas? Entre em contato com um banco de sangue veterinário ou uma clínica que realize transfusões para saber como cadastrar seu pet como doador. Antes de se deslocar, confirme os critérios de elegibilidade, a disponibilidade do serviço e a necessidade de agendamento.
+            </p>
+        </section>
     </main>
+
+    <footer id="rodape" class="rodape">
+        <div class="rodape__container">
+            <a href="../index.html" class="rodape__logo">
+                PATAVIVA
+            </a>
+            
+            <nav class="rodape__navegacao" aria-label="Navegação do rodapé">
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <a href="../index.html" class="rodape__link">Início</a>
+                    </li>
+                    
+                    <li class="rodape__item">
+                        <a href="./vacinacao.html" class="rodape__link">Vacinação</a>
+                    </li>
+
+                    <li class="rodape__item">
+                        <a href="./castracao.html" class="rodape__link">Castração</a>
+                    </li>
+
+                    <li class="rodape__item">
+                        <a href="./doacao.html" class="rodape__link" aria-current="page">Doação de sangue</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="rodape__base">
+            <p class="rodape__descricao">
+                Informação e cuidado para uma vida mais saudável dos animais.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
