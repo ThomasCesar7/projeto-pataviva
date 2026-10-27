@@ -86,6 +86,48 @@ ul {
     font-weight: 700;
 }
 
+/* Seção: Por que vacinar? */
+.beneficios {
+    background-color: #174F3D;
+    padding: 40px 5%;
+    color: #FFF8F0;
+}
+
+.beneficios__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.beneficios__titulo {
+    color: #FFF8F0;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.beneficios__lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.beneficio-card {
+    background-color: #FFF8F0;
+    color: #174F3D;
+    padding: 28px 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.beneficio-card__titulo {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.beneficio-card__descricao {
+    font-size: 15px;
+}
+
 /* Terceira Etapa: Configurando os banners*/
 
 /* Banner principal */
@@ -164,6 +206,49 @@ ul {
     object-fit: cover;
     border-radius: 12px;
 }
+
+
+/* Seção do calendário de vacinação */
+.calendario {
+    background-color: var(--verde-escuro);
+    padding: 40px 5% 50px;
+}
+
+.calendario__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.calendario__titulo {
+    color: var(--creme);
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.calendario__lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.calendario-card {
+    background-color: var(--creme);
+    color: var(--verde-escuro);
+    padding: 28px 24px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calendario-card__titulo {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.calendario-card__descricao {
+    font-size: 15px;
+}
+
 
 /*Quarta Etapa: Configurando o rodapé */
 
