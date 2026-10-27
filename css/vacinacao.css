@@ -164,3 +164,52 @@ ul {
     object-fit: cover;
     border-radius: 12px;
 }
+
+/*Quarta Etapa: Configurando o rodapé */
+
+/* Rodapé */
+.rodape {
+    background-color: var(--verde-escuro);
+    color: var(--creme);
+    padding: 35px 5% 25px;
+}
+
+.rodape__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.rodape__logo {
+    color: var(--creme);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.rodape__lista {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape__link {
+    color: var(--creme);
+    font-size: 14px;
+}
+
+.rodape__link:hover {
+    color: var(--amarelo);
+}
+
+.rodape__base {
+    border-top: 1px solid var(--verde-claro);
+    padding-top: 20px;
+}
+
+.rodape__descricao {
+    font-size: 14px;
+}
