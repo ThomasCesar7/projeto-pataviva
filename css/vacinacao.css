@@ -1,0 +1,87 @@
+/* 1. Cores do projeto */
+:root {
+    --verde-escuro: #174F3D;
+    --verde-claro: #609D67;
+    --amarelo: #FBB832;
+    --coral: #F58B73;
+    --creme: #FFF8F0;
+    --texto: #333333;
+}
+
+/* 2. Remover os espaçamentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Configuração gerais da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--creme);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+/* 4. Imagens responsivas */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5. Links e listas */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Segunda Etapa: Configurar o cabeçalho */
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: var(--verde-escuro);
+    min-height: 100px;
+    padding: 20px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.cabecalho__logo {
+    color: var(--creme);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Lista de navegação */
+.navegacao__lista {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Links do menu */
+.navegacao__link {
+    color: var(--creme);
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+/* Efeito ao passar o mouse */
+.navegacao__link:hover {
+    color: var(--amarelo);
+}
+
+/* Página atual */
+.navegacao__link--ativo {
+    color: var(--amarelo);
+    font-weight: 700;
+}
