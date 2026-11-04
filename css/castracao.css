@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header nav ul,
+    footer nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+    }
+
+    .texto-apresentacao,
+    .imagem-apresentacao {
+        width: 100%;
+    }
+
+    .titulo-descricao {
+        flex-direction: column;
+    }
+
+    .titulo-descricao h2,
+    .titulo-descricao p {
+        width: 100%;
+    }
+
+    .castracao-machos,
+    .castracao-femeas {
+        padding: 35px 5%;
+    }
+
+    .imagem-animais img {
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
