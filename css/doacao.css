@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --verde-escuro: #174D3A;
+    --verde-claro: #5E9E62;
+    --amarelo: #F7B733;
+    --rosa: #F28C72;
+    --cor-fundo: #FFF8EF;
+
+    --fonte-titulo: 'Anton SC', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-titulo);
+}
+
+
+/*Navegação para as outras páginas*/
+.nav-outras-paginas ul, .rodape ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    min-height: 35px;
+}
+
+.nav-outras-paginas, .rodape {
+    background-color: #174D3A; 
+}
+
+.nav-outras-paginas a, .rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Texto p do rodapé ao final da página*/
+.rodape p {
+    color: #FFF8EF;
+}
+
+
+/*Bloco do título h1 + p*/
+.inicio-titulo {
+    background-color: #FFF8EF;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+ /*Bloco de navegação dentro da página*/
+.navegacao-da-pagina ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao-da-pagina {
+    background-color: var(--verde-claro);
+    padding: 15px;
+}
+
+.navegacao-da-pagina a {
+    color: white;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Bloco da seção "inicio"*/
+#inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px;
+    background-color: #FFF8F0;
+}
+
+.texto-inicio {
+    flex: 1;
+    min-width: 0;
+}
+
+#inicio h2 {
+    color: var(--verde-escuro);
+    text-align: left;
+    margin-top: 0;
+}
+
+#inicio p {
+    text-align: left;
+    line-height: 1.5;
+}
+
+#inicio img {
+    display: block;
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/*Bloco das seções por-que-doar_como-funciona*/
+.por-que-doar_como-funciona {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 35px;
+    background-color: var(--verde-claro);
+}
+
+/*Título "Por que doar?"*/
+#por-que-doar h2 {
+    color: var(--rosa);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px
+
+}
+
+#por-que-doar p {
+    text-align: justify;
+    line-height: 1.5;
+    color: #FFF8EF;
+}
+
+/*Título "Como funciona a doação"*/
+#doacao h2 {
+    color: var(--rosa);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 24px
+}
+
+#doacao p {
+    text-align: justify;
+    line-height: 1.5;
+    color: #FFF8EF;
+
+}
+
+/*Bloco da classe "requisitos-doar"*/
+.requisitos-doar {
+    background-color: #FFF8EF;
+    padding: 35px;
+}
+
+/*Seção "quem-pode-doar" */
+#quem-pode-doar {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Título central "QUEM PODE DOAR"*/
+#quem-pode-doar h2 {
+    text-align: center;
+    color: var(--rosa);
+    margin-bottom: 24px;
+}
+
+/*Bloco que une as seções de "cães" e "gatos"*/
+.conteudo-doacao {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+/*configuração de da exibição dos dois blocos*/
+#bloco-caes, #bloco-gatos {
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Ajuste no tamanho das duas imagens*/
+#bloco-caes img, #bloco-gatos img {
+    width: 120px;
+    height: auto;
+    margin: 12px 0;
+}
+
+/*Título h3 para "Cães" e "Gatos"*/
+#bloco-caes h3, #bloco-gatos h3 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/*configurações para a lista ul de ambos*/
+#bloco-caes ul, #bloco-gatos ul {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+    margin: 0;
+}
+
+/*Configuração do texto p da seção "quem-pode-doar" exibido abaixo das listas ul*/
+#quem-pode-doar > p {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/*Bloco "Contato"*/
+#contato {
+    background-color: var(--rosa);
+    padding: 20px;
+}
+
+#contato h2 {
+    color: #FFF8EF;
+    margin-bottom: 24px;
+}
+
+#contato p {
+    color: #FFF8EF;
+    text-align: justify;
+    line-height: 1.5;
+}
