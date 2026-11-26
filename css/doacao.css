@@ -1,25 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --verde-escuro: #174D3A;
-    --verde-claro: #5E9E62;
-    --amarelo: #F7B733;
-    --rosa: #F28C72;
-    --cor-fundo: #FFF8EF;
 
-    --fonte-titulo: 'Anton SC', sans-serif;
+:root {
+    --amarelo: #F7B733;
+    --verde-claro: #609D67;
+    --verde-escuro: #174F3D;
+    --coral: #F58C76;
+    --creme: #FFF8F0;
+    --branco: #FFFFFF;
+    --preto: #000000;
 }
 
 body {
-    font-family: var(--fonte-titulo);
+    font-family: 'Anton SC', sans-serif;
+    background-color: #FDF6EE;
+    color: #262626;
+    line-height: 1.5;
 }
 
 
 /*Navegação para as outras páginas*/
-.nav-outras-paginas ul, .rodape ul {
+.nav-outras-paginas ul{
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -28,18 +35,13 @@ body {
     min-height: 35px;
 }
 
-.nav-outras-paginas, .rodape {
+.nav-outras-paginas {
     background-color: #174D3A; 
 }
 
-.nav-outras-paginas a, .rodape a {
+.nav-outras-paginas a {
     color: white;
     text-decoration: none;
-}
-
-/*Texto p do rodapé ao final da página*/
-.rodape p {
-    color: #FFF8EF;
 }
 
 
@@ -242,4 +244,45 @@ html {
     color: #FFF8EF;
     text-align: justify;
     line-height: 1.5;
+}
+
+/* rodapé */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem clamp(2rem, 6rem, 6rem);
+    padding: clamp(1.5rem, 3rem, 2.5rem) clamp(1rem, 2.5rem, 3rem) clamp(2.5rem, 3.5rem, 4.5rem);
+    background-color: var(--coral);
+    color: var(--creme);
+}
+
+.footer-box h3 {
+    font-size: clamp(2rem, 3.6rem, 3.6rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--creme);
+}
+
+.footer-box h3 strong {
+    color: var(--verde-escuro);
+}
+
+.footer-box p {
+    font-size: clamp(1rem, 1.5rem, 1.5rem);
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.footer-box li {
+    font-size: clamp(1.1rem, 1.7rem, 1.7rem);
+    line-height: 1.5;
+}
+
+.footer-box li::marker {
+    color: var(--creme);
 }
