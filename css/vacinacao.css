@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&display=swap');
+
 /* 1. Cores do projeto */
 :root {
     --verde-escuro: #174F3D;
@@ -17,7 +19,7 @@
 
 /* 3. Configuração gerais da página */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Anton SC', sans-serif;
     background-color: var(--creme);
     color: var(--texto);
     line-height: 1.6;
