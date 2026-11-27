@@ -17,16 +17,25 @@
     box-sizing: border-box;
 }
 
-/* 3. Configuração gerais da página */
+/* Configurações gerais da página */
 body {
     font-family: 'Anton SC', sans-serif;
     background-color: var(--creme);
-    color: var(--texto);
+    color: var(--preto);
     line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* CABEÇALHO */
-/*Navegação para as outras páginas*/
+/* Navegação para as outras páginas */
 .cabecalho {
     background-color: var(--verde-escuro);
     min-height: 100px;
@@ -53,15 +62,18 @@ body {
     align-items: center;
     gap: 30px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* Links do menu */
 .navegacao__link {
     color: var(--creme);
     font-size: 16px;
-    transition: color 0.2s ease;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease;
     text-decoration: none;
-
 }
 
 /* Efeito ao passar o mouse */
@@ -76,8 +88,7 @@ body {
     text-decoration: none;
 }
 
-
-/*Bloco do título h1 + p*/
+/* Bloco do título h1 + p */
 .inicio-titulo {
     background-color: #FFF8EF;
     width: 100%;
@@ -91,7 +102,12 @@ body {
     box-sizing: border-box;
 }
 
- /*Bloco de navegação dentro da página*/
+/* Bloco de navegação dentro da página */
+.navegacao-da-pagina {
+    background-color: var(--verde-claro);
+    padding: 15px;
+}
+
 .navegacao-da-pagina ul {
     display: flex;
     justify-content: center;
@@ -102,68 +118,9 @@ body {
     margin: 0;
 }
 
-.navegacao-da-pagina {
-    background-color: var(--verde-claro);
-    padding: 15px;
-}
-
 .navegacao-da-pagina a {
     color: white;
     text-decoration: none;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-/* RODAPÉ */
-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem clamp(2rem, 6rem, 6rem);
-    padding: clamp(1.5rem, 3rem, 2.5rem) clamp(1rem, 2.5rem, 3rem) clamp(2.5rem, 3.5rem, 4.5rem);
-    background-color: var(--coral);
-    color: var(--creme);
-}
-
-.footer-box h3 {
-    font-size: clamp(2rem, 3.6rem, 3.6rem);
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    color: var(--creme);
-}
-
-.footer-box h3 strong {
-    color: var(--verde-escuro);
-}
-
-.footer-box p {
-    font-size: clamp(1rem, 1.5rem, 1.5rem);
-    line-height: 1.6;
-}
-
-.footer-box ul {
-    list-style: none;
-    padding-left: 1.5rem;
-}
-
-.footer-box li {
-    font-size: clamp(1.1rem, 1.7rem, 1.7rem);
-    line-height: 1.5;
-}
-
-.footer-box li::marker {
-    color: var(--creme);
-}
-
-
-
-.logo a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
 }
 
 /* SEÇÃO: APRESENTAÇÃO */
@@ -326,7 +283,7 @@ footer {
 
 /* SEÇÃO: CUIDADOS ANTES E DEPOIS DA CIRURGIA */
 .cuidados {
-    background-color: FFFFFF;
+    background-color: #FFFFFF;
     padding: 45px 40px 55px;
     display: flex;
     flex-direction: column;
@@ -338,11 +295,177 @@ footer {
 .depois-cirurgia {
     width: 100%;
     max-width: 1020px;
-    display: block;
-    width: 100%;
-    max-height: 360px;
     background-color: #FFFFFF;
     border: 5px solid #EF8B6E;
     padding: 30px 40px;
-    object-fit: contain;
+}
+
+/* RODAPÉ */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem clamp(2rem, 6rem, 6rem);
+    padding: clamp(1.5rem, 3rem, 2.5rem) clamp(1rem, 2.5rem, 3rem) clamp(2.5rem, 3.5rem, 4.5rem);
+    background-color: var(--coral);
+    color: var(--creme);
+}
+
+.footer-box h3 {
+    font-size: clamp(2rem, 3.6rem, 3.6rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--creme);
+}
+
+.footer-box h3 strong {
+    color: var(--verde-escuro);
+}
+
+.footer-box p {
+    font-size: clamp(1rem, 1.5rem, 1.5rem);
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.footer-box li {
+    font-size: clamp(1.1rem, 1.7rem, 1.7rem);
+    line-height: 1.5;
+}
+
+.footer-box li::marker {
+    color: var(--creme);
+}
+
+/* RESPONSIVIDADE (ALINHADA AO INDEX) */
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 1.25rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .apresentacao,
+    .titulo-descricao {
+        padding: 3rem 2rem;
+        gap: 2rem;
+    }
+
+    .texto-apresentacao h1 {
+        font-size: clamp(2rem, 4.2vw, 2.5rem);
+    }
+
+    .titulo-descricao h2 {
+        font-size: clamp(1.6rem, 3.2vw, 2rem);
+    }
+
+    .importancia,
+    .castracao-machos,
+    .castracao-femeas,
+    .imagem-animais,
+    .cuidados {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    footer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .cabecalho__logo {
+        font-size: clamp(1.4rem, 5vw, 1.75rem);
+    }
+
+    .navegacao__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1rem;
+    }
+
+    .navegacao__link,
+    .navegacao__link--ativo {
+        font-size: clamp(0.875rem, 3.5vw, 1rem);
+        padding: 6px 10px;
+    }
+
+    .apresentacao,
+    .titulo-descricao {
+        flex-direction: column;
+        padding: 2.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .texto-apresentacao p {
+        max-width: 100%;
+        font-size: clamp(0.95rem, 3.8vw, 1.05rem);
+    }
+
+    .imagem-apresentacao {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .importancia,
+    .castracao-machos,
+    .castracao-femeas,
+    .cuidados {
+        padding: 2.5rem 1rem;
+    }
+
+    .imagem-animais {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .imagem-animais img {
+        padding: 1.25rem;
+        max-height: none;
+    }
+
+    .informacao,
+    .titulo-descricao p,
+    .pergunta p {
+        padding: 1.25rem;
+        font-size: clamp(0.92rem, 3.6vw, 1rem);
+    }
+
+    .pergunta h3 {
+        min-width: 0;
+        width: 100%;
+        font-size: clamp(1rem, 4vw, 1.15rem);
+    }
+
+    .antes-cirurgia,
+    .depois-cirurgia {
+        padding: 1.5rem 1.25rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .footer-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .footer-box p {
+        font-size: 1.1rem;
+    }
+
+    .footer-box li {
+        font-size: 1.2rem;
+    }
 }
