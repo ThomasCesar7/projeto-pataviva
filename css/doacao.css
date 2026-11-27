@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --amarelo: #F7B733;
     --verde-claro: #609D67;
@@ -17,30 +10,68 @@
     --preto: #000000;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 3. Configuração gerais da página */
 body {
     font-family: 'Anton SC', sans-serif;
-    background-color: #FDF6EE;
-    color: #262626;
-    line-height: 1.5;
+    background-color: var(--creme);
+    color: var(--texto);
+    line-height: 1.6;
 }
 
 
 /*Navegação para as outras páginas*/
-.nav-outras-paginas ul{
+.cabecalho {
+    background-color: var(--verde-escuro);
+    min-height: 100px;
+    padding: 20px 5%;
+
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.cabecalho__logo {
+    color: var(--creme);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Lista de navegação */
+.navegacao__lista {
+    display: flex;
+    align-items: center;
+    gap: 30px;
     list-style: none;
-    padding: 0;
-    min-height: 35px;
 }
 
-.nav-outras-paginas {
-    background-color: #174D3A; 
+/* Links do menu */
+.navegacao__link {
+    color: var(--creme);
+    font-size: 16px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+
 }
 
-.nav-outras-paginas a {
-    color: white;
+/* Efeito ao passar o mouse */
+.navegacao__link:hover {
+    color: var(--amarelo);
+}
+
+/* Página atual */
+.navegacao__link--ativo {
+    color: var(--amarelo);
+    font-weight: 700;
     text-decoration: none;
 }
 
@@ -231,8 +262,13 @@ html {
 
 /*Bloco "Contato"*/
 #contato {
-    background-color: var(--rosa);
-    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    background-color: var(--verde-claro);
+    border: 5px solid #FFF8EF;
+    padding: 30px 40px;
 }
 
 #contato h2 {
