@@ -2,21 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&display=swap');
 
 :root {
-
---amarelo: #F7B733;
-
---verde-claro: #609D67;
-
---verde-escuro: #174F3D;
-
---coral: #F58C76;
-
---creme: #FFF8F0;
-
---branco: #FFFFFF;
-
---preto: #000000;
-
+    --amarelo: #F7B733;
+    --verde-claro: #609D67;
+    --verde-escuro: #174F3D;
+    --coral: #F58C76;
+    --creme: #FFF8F0;
+    --branco: #FFFFFF;
+    --preto: #000000;
 }
 
 * {
@@ -25,20 +17,103 @@
     box-sizing: border-box;
 }
 
+/* 3. Configuração gerais da página */
 body {
     font-family: 'Anton SC', sans-serif;
-    background-color: #FDF6EE;
-    color: #262626;
-    line-height: 1.5;
+    background-color: var(--creme);
+    color: var(--texto);
+    line-height: 1.6;
 }
 
 /* CABEÇALHO */
-header {
-    background-color: #164935;
+/*Navegação para as outras páginas*/
+.cabecalho {
+    background-color: var(--verde-escuro);
+    min-height: 100px;
+    padding: 20px 5%;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 18px 60px;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Logo */
+.cabecalho__logo {
+    color: var(--creme);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+/* Lista de navegação */
+.navegacao__lista {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Links do menu */
+.navegacao__link {
+    color: var(--creme);
+    font-size: 16px;
+    transition: color 0.2s ease;
+    text-decoration: none;
+
+}
+
+/* Efeito ao passar o mouse */
+.navegacao__link:hover {
+    color: var(--amarelo);
+}
+
+/* Página atual */
+.navegacao__link--ativo {
+    color: var(--amarelo);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+/*Bloco do título h1 + p*/
+.inicio-titulo {
+    background-color: #FFF8EF;
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+ /*Bloco de navegação dentro da página*/
+.navegacao-da-pagina ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navegacao-da-pagina {
+    background-color: var(--verde-claro);
+    padding: 15px;
+}
+
+.navegacao-da-pagina a {
+    color: white;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* RODAPÉ */
@@ -89,30 +164,6 @@ footer {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 1px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 18px;
-}
-
-nav ul li a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 0.9rem;
-    padding: 6px 14px;
-    border-radius: 6px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Destaque da página ativa (Castração) e efeito hover */
-nav ul li a[href="#inicio"],
-nav ul li a:hover {
-    background-color: #E6AD3B;
-    color: #164935;
-    font-weight: 600;
 }
 
 /* SEÇÃO: APRESENTAÇÃO */
@@ -275,7 +326,7 @@ nav ul li a:hover {
 
 /* SEÇÃO: CUIDADOS ANTES E DEPOIS DA CIRURGIA */
 .cuidados {
-    background-color: #EF8B6E;
+    background-color: FFFFFF;
     padding: 45px 40px 55px;
     display: flex;
     flex-direction: column;
@@ -287,3 +338,11 @@ nav ul li a:hover {
 .depois-cirurgia {
     width: 100%;
     max-width: 1020px;
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    background-color: #FFFFFF;
+    border: 5px solid #EF8B6E;
+    padding: 30px 40px;
+    object-fit: contain;
+}

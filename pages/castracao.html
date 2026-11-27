@@ -13,17 +13,33 @@
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
-        <div class="logo">
-            <a href="#inicio">PATAVIVA</a>
-        </div>
+    <header id="cabecalho" class="cabecalho">
+        <a href="../index.html" class="cabecalho__logo">PATAVIVA</a>
+        
+        <nav class="navegacao" aria-label="Navegação principal">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item">
+                    <a href="../index.html" class="navegacao__link">Início</a>
+                </li>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Início</a></li>
-                <li><a href="vacinacao.html">Vacinação</a></li>
-                <li><a href="#inicio">Castração</a></li>
-                <li><a href="doacao.html">Doação</a></li>
+                <li class="navegacao__item">
+                    <a href="./vacinacao.html"
+                       class="navegacao__link">
+                        Vacinação
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./castracao.html" class="navegacao__link navegacao__link--ativo" aria-current="page">
+                        Castração
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./doacao.html" class="navegacao__link">
+                        Doação de sangue
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
