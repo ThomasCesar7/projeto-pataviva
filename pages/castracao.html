@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -8,23 +7,39 @@
     
     <title>Pataviva - Castração</title>
 
-   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/castracao.css">
 </head>
 
 <body>
 
     <!-- CABEÇALHO -->
-    <header>
-        <div class="logo">
-            <a href="#inicio">PATAVIVA</a>
-        </div>
+    <header id="cabecalho" class="cabecalho">
+        <a href="../index.html" class="cabecalho__logo">PATAVIVA</a>
+        
+        <nav class="navegacao" aria-label="Navegação principal">
+            <ul class="navegacao__lista">
+                <li class="navegacao__item">
+                    <a href="../index.html" class="navegacao__link">Início</a>
+                </li>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="vacinacao.html">Vacinação</a></li>
-                <li><a href="#inicio">Castração</a></li>
-                <li><a href="doacao.html">Doação</a></li>
+                <li class="navegacao__item">
+                    <a href="./vacinacao.html"
+                       class="navegacao__link">
+                        Vacinação
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./castracao.html" class="navegacao__link navegacao__link--ativo" aria-current="page">
+                        Castração
+                    </a>
+                </li>
+
+                <li class="navegacao__item">
+                    <a href="./doacao.html" class="navegacao__link">
+                        Doação de sangue
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -305,20 +320,19 @@
 
     <!-- RODAPÉ -->
     <footer>
-
-        <div class="logo">
-            <a href="#inicio">PATAVIVA</a>
+        <div class="footer-box">
+            <h3>projeto <strong>pataviva</strong></h3>
+            <p>este projeto foi desenvolvido para o projeto final da disciplina de desenvolvimento front-end para web.</p>
         </div>
-
-        <nav>
+        <div class="footer-box">
+            <h3>Alunos <strong>desenvolvedores</strong></h3>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="vacinacao.html">Vacinação</a></li>
-                <li><a href="#inicio">Castração</a></li>
-                <li><a href="doacao.html">Doação</a></li>
+                <li>Emily Santos Rosa</li>
+                <li>João Rafael Albuquerque Pires</li>
+                <li>Laisa Beatriz Ferreira da Silva</li>
+                <li>Thomás da silva César</li>
             </ul>
-        </nav>
-
+        </div>
     </footer>
 
 </body>

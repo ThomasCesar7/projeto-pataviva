@@ -1,49 +1,94 @@
+/* RESET E CONFIGURAÇÕES GERAIS */
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC:wght@400&display=swap');
+
+:root {
+    --amarelo: #F7B733;
+    --verde-claro: #609D67;
+    --verde-escuro: #174F3D;
+    --coral: #F58C76;
+    --creme: #FFF8F0;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --verde-escuro: #174D3A;
-    --verde-claro: #5E9E62;
-    --amarelo: #F7B733;
-    --rosa: #F28C72;
-    --cor-fundo: #FFF8EF;
 
-    --fonte-titulo: 'Anton SC', sans-serif;
-}
-
+/* Configurações gerais da página */
 body {
-    font-family: var(--fonte-titulo);
+    font-family: 'Anton SC', sans-serif;
+    background-color: var(--creme);
+    color: var(--preto);
+    line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/*Navegação para as outras páginas*/
-.nav-outras-paginas ul, .rodape ul {
+html {
+    scroll-behavior: smooth;
+}
+
+/* CABEÇALHO */
+/* Navegação para as outras páginas */
+.cabecalho {
+    background-color: var(--verde-escuro);
+    min-height: 100px;
+    padding: 20px 5%;
+
     display: flex;
-    justify-content: center;
-    gap: 25px;
-    list-style: none;
-    padding: 0;
-    min-height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.nav-outras-paginas, .rodape {
-    background-color: #174D3A; 
-}
-
-.nav-outras-paginas a, .rodape a {
-    color: white;
+/* Logo */
+.cabecalho__logo {
+    color: var(--creme);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
-/*Texto p do rodapé ao final da página*/
-.rodape p {
-    color: #FFF8EF;
+/* Lista de navegação */
+.navegacao__lista {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+/* Links do menu */
+.navegacao__link {
+    color: var(--creme);
+    font-size: 16px;
+    padding: 6px 14px;
+    border-radius: 6px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    text-decoration: none;
+}
 
-/*Bloco do título h1 + p*/
+/* Efeito ao passar o mouse */
+.navegacao__link:hover {
+    color: var(--amarelo);
+}
+
+/* Página atual */
+.navegacao__link--ativo {
+    color: var(--amarelo);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Bloco do título h1 + p */
 .inicio-titulo {
     background-color: #FFF8EF;
     width: 100%;
@@ -57,7 +102,12 @@ body {
     box-sizing: border-box;
 }
 
- /*Bloco de navegação dentro da página*/
+/* Bloco de navegação dentro da página */
+.navegacao-da-pagina {
+    background-color: var(--verde-claro);
+    padding: 15px;
+}
+
 .navegacao-da-pagina ul {
     display: flex;
     justify-content: center;
@@ -68,21 +118,12 @@ body {
     margin: 0;
 }
 
-.navegacao-da-pagina {
-    background-color: var(--verde-claro);
-    padding: 15px;
-}
-
 .navegacao-da-pagina a {
     color: white;
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/*Bloco da seção "inicio"*/
+/* Bloco da seção "inicio" */
 #inicio {
     display: flex;
     flex-direction: row;
@@ -117,7 +158,7 @@ html {
     object-fit: cover;
 }
 
-/*Bloco das seções por-que-doar_como-funciona*/
+/* Bloco das seções por-que-doar_como-funciona */
 .por-que-doar_como-funciona {
     display: flex;
     flex-direction: row;
@@ -128,13 +169,12 @@ html {
     background-color: var(--verde-claro);
 }
 
-/*Título "Por que doar?"*/
+/* Título "Por que doar?" */
 #por-que-doar h2 {
     color: var(--rosa);
     text-align: center;
     margin-top: 0;
-    margin-bottom: 24px
-
+    margin-bottom: 24px;
 }
 
 #por-que-doar p {
@@ -143,41 +183,40 @@ html {
     color: #FFF8EF;
 }
 
-/*Título "Como funciona a doação"*/
+/* Título "Como funciona a doação" */
 #doacao h2 {
     color: var(--rosa);
     text-align: center;
     margin-top: 0;
-    margin-bottom: 24px
+    margin-bottom: 24px;
 }
 
 #doacao p {
     text-align: justify;
     line-height: 1.5;
     color: #FFF8EF;
-
 }
 
-/*Bloco da classe "requisitos-doar"*/
+/* Bloco da classe "requisitos-doar" */
 .requisitos-doar {
     background-color: #FFF8EF;
     padding: 35px;
 }
 
-/*Seção "quem-pode-doar" */
+/* Seção "quem-pode-doar" */
 #quem-pode-doar {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/*Título central "QUEM PODE DOAR"*/
+/* Título central "QUEM PODE DOAR" */
 #quem-pode-doar h2 {
     text-align: center;
     color: var(--rosa);
     margin-bottom: 24px;
 }
 
-/*Bloco que une as seções de "cães" e "gatos"*/
+/* Bloco que une as seções de "cães" e "gatos" */
 .conteudo-doacao {
     display: flex;
     justify-content: center;
@@ -187,8 +226,9 @@ html {
     margin-bottom: 24px;
 }
 
-/*configuração de da exibição dos dois blocos*/
-#bloco-caes, #bloco-gatos {
+/* Configuração da exibição dos dois blocos */
+#bloco-caes,
+#bloco-gatos {
     flex: 1;
     min-width: 280px;
     max-width: 400px;
@@ -197,28 +237,31 @@ html {
     align-items: center;
 }
 
-/*Ajuste no tamanho das duas imagens*/
-#bloco-caes img, #bloco-gatos img {
+/* Ajuste no tamanho das duas imagens */
+#bloco-caes img,
+#bloco-gatos img {
     width: 120px;
     height: auto;
     margin: 12px 0;
 }
 
-/*Título h3 para "Cães" e "Gatos"*/
-#bloco-caes h3, #bloco-gatos h3 {
+/* Título h3 para "Cães" e "Gatos" */
+#bloco-caes h3,
+#bloco-gatos h3 {
     text-align: center;
     margin-bottom: 8px;
 }
 
-/*configurações para a lista ul de ambos*/
-#bloco-caes ul, #bloco-gatos ul {
+/* Configurações para a lista ul de ambos */
+#bloco-caes ul,
+#bloco-gatos ul {
     width: 100%;
     text-align: left;
     padding-left: 20px;
     margin: 0;
 }
 
-/*Configuração do texto p da seção "quem-pode-doar" exibido abaixo das listas ul*/
+/* Configuração do texto p da seção "quem-pode-doar" exibido abaixo das listas ul */
 #quem-pode-doar > p {
     text-align: center;
     max-width: 800px;
@@ -227,10 +270,14 @@ html {
     color: #555;
 }
 
-/*Bloco "Contato"*/
+/* Bloco "Contato" */
 #contato {
-    background-color: var(--rosa);
-    padding: 20px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    background-color: var(--verde-claro);
+    border: 5px solid #FFF8EF;
+    padding: 30px 40px;
 }
 
 #contato h2 {
@@ -242,4 +289,163 @@ html {
     color: #FFF8EF;
     text-align: justify;
     line-height: 1.5;
+}
+
+/* RODAPÉ */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem clamp(2rem, 6rem, 6rem);
+    padding: clamp(1.5rem, 3rem, 2.5rem) clamp(1rem, 2.5rem, 3rem) clamp(2.5rem, 3.5rem, 4.5rem);
+    background-color: var(--coral);
+    color: var(--creme);
+}
+
+.footer-box h3 {
+    font-size: clamp(2rem, 3.6rem, 3.6rem);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: var(--creme);
+}
+
+.footer-box h3 strong {
+    color: var(--verde-escuro);
+}
+
+.footer-box p {
+    font-size: clamp(1rem, 1.5rem, 1.5rem);
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.footer-box li {
+    font-size: clamp(1.1rem, 1.7rem, 1.7rem);
+    line-height: 1.5;
+}
+
+.footer-box li::marker {
+    color: var(--creme);
+}
+
+/* RESPONSIVIDADE (ALINHADA AO INDEX) */
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 1.25rem 2rem;
+        gap: 1.5rem;
+    }
+
+    #inicio,
+    .por-que-doar_como-funciona {
+        padding: 2rem;
+        gap: 1.5rem;
+    }
+
+    #inicio h2,
+    #por-que-doar h2,
+    #doacao h2,
+    #quem-pode-doar h2,
+    #contato h2 {
+        font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+
+    .requisitos-doar {
+        padding: 2rem;
+    }
+
+    .conteudo-doacao {
+        gap: 1.5rem;
+    }
+
+    footer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .cabecalho__logo {
+        font-size: clamp(1.4rem, 5vw, 1.75rem);
+    }
+
+    .navegacao__lista {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1rem;
+    }
+
+    .navegacao__link,
+    .navegacao__link--ativo {
+        font-size: clamp(0.875rem, 3.5vw, 1rem);
+        padding: 6px 10px;
+    }
+
+    .inicio-titulo {
+        min-height: 220px;
+        padding: 2rem 1.25rem;
+    }
+
+    .navegacao-da-pagina ul {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+    }
+
+    #inicio,
+    .por-que-doar_como-funciona {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem 1.25rem;
+        gap: 1.5rem;
+    }
+
+    #inicio img {
+        width: 100%;
+    }
+
+    .requisitos-doar {
+        padding: 2rem 1.25rem;
+    }
+
+    .conteudo-doacao {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #bloco-caes,
+    #bloco-gatos {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #contato {
+        padding: 1.5rem 1.25rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1.5rem 3rem;
+    }
+
+    .footer-box h3 {
+        font-size: 2.5rem;
+    }
+
+    .footer-box p {
+        font-size: 1.1rem;
+    }
+
+    .footer-box li {
+        font-size: 1.2rem;
+    }
 }
